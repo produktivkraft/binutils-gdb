@@ -17,7 +17,10 @@ CXXFLAGS_FOR_TARGET="--target=riscv64-unknown-elf -mcmodel=medany -nostdlib -O2"
   --disable-sim \
   --disable-werror
 
+# $CONDA_PREFIX/../bear/bin/bear -- make -j$(nproc)
+# or
 make -j$(nproc) all
+
 make install
 
 popd

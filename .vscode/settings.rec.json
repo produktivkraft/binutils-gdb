@@ -1,0 +1,8 @@
+{
+    "terminal.integrated.env.osx": {
+        "EXT_PATH": "${workspaceFolder}/build/install/bin",
+    },
+    "files.exclude": {
+        "**/ChangeLog*/**": true,
+    }
+}
