@@ -363,11 +363,9 @@ const struct riscv_opcode riscv_opcodes[] =
 
 // custom, set in front
 // TODO:
-// {"launch",        0, INSN_CLASS_I, "s,t,Xc2",    MATCH_LAUNCH, MASK_LAUNCH, match_opcode, 0 },
-{"launch",        0, INSN_CLASS_I, "Xc2,s,t",    MATCH_LAUNCH, MASK_LAUNCH, match_opcode, 0 },
-// {"launch",        0, INSN_CLASS_I, "Xc2,s,s",    MATCH_LAUNCH, MASK_LAUNCH, match_opcode, 0 },
-// {"launch",        0, INSN_CLASS_I, "s,t,u",    MATCH_LAUNCH, MASK_LAUNCH, match_opcode, 0 },
-// {"launch",        0, INSN_CLASS_I, "u,s,t",    MATCH_LAUNCH, MASK_LAUNCH, match_opcode, 0 },
+{"launch",        0, INSN_CLASS_I, "d,s,t",    MATCH_LAUNCH, MASK_LAUNCH, match_opcode, 0 },
+// {"launch",        0, INSN_CLASS_I, "Xtu5@20,s,t",    MATCH_LAUNCH, MASK_LAUNCH, match_opcode, 0 },
+// {"launch",        0, INSN_CLASS_I, "s,t,Xtu5@20",    MATCH_LAUNCH, MASK_LAUNCH, match_opcode, 0 },
 
 /* Standard hints.  */
 {"prefetch.i",  0, INSN_CLASS_ZICBOP, "Wif(s)", MATCH_PREFETCH_I, MASK_PREFETCH_I, match_opcode, 0 },
