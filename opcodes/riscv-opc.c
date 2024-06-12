@@ -3198,6 +3198,9 @@ const struct riscv_opcode riscv_insn_types[] =
 
 {"cj",      0, INSN_CLASS_C,       "O2,CF3,Ca",         0, 0, match_opcode, 0 },
 
+// custom
+{"launch",        0, INSN_CLASS_I, "s,s,u",    MATCH_LAUNCH, MASK_LAUNCH, match_opcode, 0 },
+
 /* Terminate the list.  */
 {0, 0, INSN_CLASS_NONE, 0, 0, 0, 0, 0}
 };
