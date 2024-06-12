@@ -361,6 +361,9 @@ const struct riscv_opcode riscv_opcodes[] =
 {
 /* name, xlen, isa, operands, match, mask, match_func, pinfo.  */
 
+// custom, set in front
+{"launch",        0, INSN_CLASS_I, "s,s,u",    MATCH_LAUNCH, MASK_LAUNCH, match_opcode, 0 },
+
 /* Standard hints.  */
 {"prefetch.i",  0, INSN_CLASS_ZICBOP, "Wif(s)", MATCH_PREFETCH_I, MASK_PREFETCH_I, match_opcode, 0 },
 {"prefetch.r",  0, INSN_CLASS_ZICBOP, "Wif(s)", MATCH_PREFETCH_R, MASK_PREFETCH_R, match_opcode, 0 },
@@ -3197,9 +3200,6 @@ const struct riscv_opcode riscv_insn_types[] =
 {"cb",      0, INSN_CLASS_F_AND_C, "O2,CF3,CS,Cp",      0, 0, match_opcode, 0 },
 
 {"cj",      0, INSN_CLASS_C,       "O2,CF3,Ca",         0, 0, match_opcode, 0 },
-
-// custom
-{"launch",        0, INSN_CLASS_I, "s,s,u",    MATCH_LAUNCH, MASK_LAUNCH, match_opcode, 0 },
 
 /* Terminate the list.  */
 {0, 0, INSN_CLASS_NONE, 0, 0, 0, 0, 0}
