@@ -76,3 +76,4 @@ stamp-*
 /gettext*
 
 /build*/
+a.out
