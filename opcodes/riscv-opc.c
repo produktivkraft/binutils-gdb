@@ -363,6 +363,7 @@ const struct riscv_opcode riscv_opcodes[] =
 
 // custom, set in front
 {"launch",        0, INSN_CLASS_I, "s,t,Xtu5@7",    MATCH_LAUNCH, MASK_LAUNCH, match_opcode, 0 },
+{"exit",        0, INSN_CLASS_I, "",    MATCH_EXIT, MASK_EXIT, match_opcode, 0 },
 
 /* Standard hints.  */
 {"prefetch.i",  0, INSN_CLASS_ZICBOP, "Wif(s)", MATCH_PREFETCH_I, MASK_PREFETCH_I, match_opcode, 0 },
