@@ -419,6 +419,9 @@ const struct riscv_opcode riscv_opcodes[] =
 {
 /* name, xlen, isa, operands, match, mask, match_func, pinfo.  */
 
+// TODO: set a proper place
+{"xyz.nop",     0, INSN_CLASS_I, "", MATCH_XYZ_NOP, MASK_XYZ_NOP, match_opcode, 0 },
+
 /* Standard hints.  */
 {"prefetch.i",  0, INSN_CLASS_ZICBOP, "Wif(s)", MATCH_PREFETCH_I, MASK_PREFETCH_I, match_opcode, 0 },
 {"prefetch.r",  0, INSN_CLASS_ZICBOP, "Wif(s)", MATCH_PREFETCH_R, MASK_PREFETCH_R, match_opcode, 0 },
